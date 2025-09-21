@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book>
+    <title>Lão Hạc</title>
+    <author>Nam Cao</author>
+    <year>1943</year>
+    <genre>Truyện ngắn</genre>
+  </book>
+  <book>
+    <title>Số Đỏ</title>
+    <author>Vũ Trọng Phụng</author>
+    <year>1936</year>
+    <genre>Tiểu thuyết</genre>
+  </book>
+  <book>
+    <title>Dế Mèn Phiêu Lưu Ký</title>
+    <author>Tô Hoài</author>
+    <year>1941</year>
+    <genre>Truyện thiếu nhi</genre>
+  </book>
+</library>

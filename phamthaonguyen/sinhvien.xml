@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+  <student>
+    <name>Lâm Dương Quốc</name>
+    <id>2211075</id>
+    <subjects>
+      <subject>
+        <subject_name>Toán cao cấp</subject_name>
+        <score>8.5</score>
+      </subject>
+      <subject>
+        <subject_name>Lập trình Web</subject_name>
+        <score>9.0</score>
+      </subject>
+    </subjects>
+  </student>
+  <student>
+    <name>Nguyễn Phát Tài </name>
+    <id>2211027</id>    
+    <subjects>
+      <subject>
+        <subject_name>Cơ sở dữ liệu</subject_name>
+        <score>7.0</score>
+      </subject>
+      <subject>
+        <subject_name>Tiếng Anh chuyên ngành</subject_name>
+        <score>8.0</score>
+      </subject>
+    </subjects>
+  </student>
+   <name>Phạm Thảo Nguyên </name>
+    <id>2211063</id>    
+    <subjects>
+      <subject>
+        <subject_name>Giải thuật</subject_name>
+        <score>10.0</score>
+      </subject>
+      <subject>
+        <subject_name>Giải tích </subject_name>
+        <score>9.5</score>
+      </subject>
+    </subjects>
+  </student>
+</class>
