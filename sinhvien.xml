@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class [
+  <!ELEMENT class (student+)>
+  <!ELEMENT student (name, id, subjects)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT subjects (subject+)>
+  <!ELEMENT subject (subject_name, score)>
+  <!ELEMENT subject_name (#PCDATA)>
+  <!ELEMENT score (#PCDATA)>
+]>
 <class>
   <student>
     <name>Lâm Dương Quốc</name>
@@ -14,9 +24,10 @@
       </subject>
     </subjects>
   </student>
+
   <student>
-    <name>Nguyễn Phát Tài </name>
-    <id>2211027</id>    
+    <name>Nguyễn Phát Tài</name>
+    <id>2211027</id>
     <subjects>
       <subject>
         <subject_name>Cơ sở dữ liệu</subject_name>
@@ -28,15 +39,17 @@
       </subject>
     </subjects>
   </student>
-   <name>Phạm Thảo Nguyên </name>
-    <id>2211063</id>    
+
+  <student>
+    <name>Phạm Thảo Nguyên</name>
+    <id>2211063</id>
     <subjects>
       <subject>
         <subject_name>Giải thuật</subject_name>
         <score>10.0</score>
       </subject>
       <subject>
-        <subject_name>Giải tích </subject_name>
+        <subject_name>Giải tích</subject_name>
         <score>9.5</score>
       </subject>
     </subjects>

@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company [
+  <!ELEMENT company (dep:department+)>
+  <!ATTLIST company
+    xmlns:hr CDATA #IMPLIED
+    xmlns:dep CDATA #IMPLIED
+  >
+  
+  <!ELEMENT dep:department (hr:employee+)>
+  <!ATTLIST dep:department name CDATA #REQUIRED>
+  
+  <!ELEMENT hr:employee (hr:name, hr:position)>
+  <!ATTLIST hr:employee id ID #REQUIRED>
+  
+  <!ELEMENT hr:name (#PCDATA)>
+  <!ELEMENT hr:position (#PCDATA)>
+]>
+
 <company xmlns:hr="http://company.com/hr" xmlns:dep="http://company.com/department">
   <dep:department name="Kinh doanh">
     <hr:employee id="E001">
@@ -10,12 +27,14 @@
       <hr:position>Nhân viên kinh doanh</hr:position>
     </hr:employee>
   </dep:department>
+
   <dep:department name="Kỹ thuật">
     <hr:employee id="E003">
       <hr:name>Lâm Dương Quốc</hr:name>
       <hr:position>Lập trình viên</hr:position>
     </hr:employee>
   </dep:department>
+
   <dep:department name="Kế Toán">
     <hr:employee id="k001">
       <hr:name>Lê Thị Cẩm</hr:name>
@@ -26,6 +45,7 @@
       <hr:position>Nhân viên kinh doanh</hr:position>
     </hr:employee>
   </dep:department>
+
   <dep:department name="Kỹ thuật">
     <hr:employee id="k003">
       <hr:name>Phạm Minh Tuấn</hr:name>

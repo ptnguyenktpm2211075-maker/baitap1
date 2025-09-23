@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders [
+  <!ELEMENT orders (order:order+)>
+  <!ATTLIST orders
+    xmlns:order CDATA #IMPLIED
+    xmlns:prod CDATA #IMPLIED
+  >
+
+  <!ELEMENT order:order (prod:item+)>
+  <!ATTLIST order:order
+    id ID #REQUIRED
+    customer CDATA #REQUIRED
+    date CDATA #REQUIRED
+  >
+
+  <!ELEMENT prod:item (prod:name)>
+  <!ATTLIST prod:item
+    id ID #REQUIRED
+    quantity CDATA #REQUIRED
+    price CDATA #REQUIRED
+  >
+
+  <!ELEMENT prod:name (#PCDATA)>
+]>
 <orders xmlns:order="http://company.com/order" xmlns:prod="http://company.com/product">
 
     <!-- Đơn hàng thứ nhất -->
